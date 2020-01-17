@@ -16,10 +16,11 @@
         "typescript": "^3.7.5"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
+        "start": "npm run lint && react-scripts start",
+        "build": "npm run lint && react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "lint": "eslint src/**/*.ts src/**/*.tsx"
     },
     "eslintConfig": {
         "extends": "react-app"
