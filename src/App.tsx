@@ -1,23 +1,15 @@
 import './App.css';
 
 import React from 'react';
+import TilesList from './Component/Tiles/TilesList/TilesList';
 
 const App: React.FC = () => {
 	return (
-		<div className='App'>
-			<header className='App-header'>
-				<p>
-          Edit <code>src/App.tsx</code> and save to reload.
-				</p>
-				<a
-					className='App-link'
-					href='https://reactjs.org'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-          Learn React
-				</a>
-			</header>
+		<div>
+			<div className={'header'}>
+				<h1 className={'header-title'}>Dagbladet</h1>
+			</div>
+			<TilesList />
 		</div>
 	);
 };
